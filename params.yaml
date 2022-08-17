@@ -1,0 +1,18 @@
+Models:
+	Rank: "Models/rank_lr.pkl"
+	Share: "Models/share_lr.pkl"
+	Top3: "Models/top3_lr.pkl"
+	Top5: "Models/top5_lr.pkl"
+
+
+Scalers:
+	Rank:  "Scalers/rank_scaler.pkl"
+	Share:  "Scalers/share_scaler.pkl"
+	Top3:  "Scalers/top3_scaler.pkl"
+	Top5:  "Scalers/top5_scaler.pkl"
+	
+Transformers:
+	Rank:  "Transformers/rank_pt.pkl"
+	Share:  "Transformers/share_pt.pkl"
+	Top3:  "Transformers/top3_pt.pkl"
+	Top5:  "Transformers/top5_pt.pkl"
