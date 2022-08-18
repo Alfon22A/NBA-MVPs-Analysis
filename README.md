@@ -4,6 +4,14 @@
 
 [Tableau Presentation](https://public.tableau.com/views/NBA-MVPs-Analysis/Intro?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
+## Introduction
+
+In this project, we analize the stats of players that recieved at least a vote towards the NBA MVP Regular Season Award from 2000 to 2022.
+
+We will try to answer some questions related to the Dataset and find out if stats are as important as they seem in order to crown the winner.
+
+We will also test some models in order to try to predict a future winner based on stats.
+
 ## Questions
 - Which stat is the most important towards winning the MVP?
 - Are stats the only thing that matters?
