@@ -10,12 +10,12 @@ In this project, we analize the stats of players that recieved at least a vote t
 
 We will try to answer some questions related to the Dataset and find out if stats are as important as they seem in order to crown the winner.
 
-We will also test some models in order to try to predict a future winner based on stats.
+We will also test some models to predict a future winner based on stats.
 
 ## Questions
 - Which stat is the most important towards winning the MVP?
 - Are stats the only thing that matters?
-- Is it possible to create a model taht predicts the MVP?
+- Is it possible to create a model that predicts the MVP?
 
 ## Info
 - Points: awarded by making field goals (two or three points) or free throws (one point). [Wikipedia](https://en.wikipedia.org/wiki/Point_(basketball))
