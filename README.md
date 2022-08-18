@@ -27,3 +27,24 @@
 - [Basketball-Reference (Datasets)](https://www.basketball-reference.com/awards/awards_2000.html)
 - [NBA (MVPs)](https://www.nba.com/news/history-mvp-award-winners)
 - Wikipedia (Definitions)
+
+## Conclusions
+
+### Which stat is the most important towards winning the MVP?
+- Points/M: 6 MVPs, ranking first on average.
+- Rebounds/M: 4 MVPs, ranking first on average.
+- Assists/M: 2 MVPs, ranking first on average.
+
+### Are stats the only thing that matters?
+- Stats/M: 12 MVPs, ranking first on average.
+- Win Shares/48: 15 MVPs, ranking first on average.
+
+### Is it possible to create a model that predicts the MVP?
+- No tested model was good enough.
+- Best tested model: Logistic Regression for Top 5.
+
+### Next steps
+- Including more data.
+- Factoring Stats and Win Shares coeficients.
+- Including Team Win%
+- Taking voter fatigue into account.
