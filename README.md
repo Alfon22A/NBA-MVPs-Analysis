@@ -48,5 +48,3 @@
 - Factoring Stats and Win Shares coeficients.
 - Including Team Win%
 - Taking voter fatigue into account.
-
-<za
