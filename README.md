@@ -1,4 +1,4 @@
-![MVP](https://github.com/Alfon22A/Mid-Boot-Camp-Project/blob/master/Slides/Images/MVPTrophy.png)![NBA](https://github.com/Alfon22A/Mid-Boot-Camp-Project/blob/master/Slides/Images/NBALogo.png)
+![NBA](https://github.com/Alfon22A/Mid-Boot-Camp-Project/blob/master/Slides/Images/NBALogo.png)![MVP](https://github.com/Alfon22A/Mid-Boot-Camp-Project/blob/master/Slides/Images/MVPTrophy.png)
 
 # NBA MVPs Analysis (2000-2022)
 
