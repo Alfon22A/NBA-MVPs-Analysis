@@ -19,26 +19,9 @@ def correlation(df, target = -1, threshold=0.75):
         if (corr_matrix.iloc[i,target] < threshold):
             df2 = df2.drop(columns = corr_matrix.columns[i])
 			
-    display(sns.heatmap(df2.corr(), annot=True))
+    sns.heatmap(df2.corr(), annot=True)
 	
     return df2
-
-def hist_maker(df):
-    '''Returns histplots in a single fig for each column of a given Dataframe
-    
-    Parameters: Dataframe
-    Returns: a fig with histplots of all the columns'''
-    
-    cols = list(df.columns)
-    x = len(cols)
-    fig, ax = plt.subplots(1,x, figsize=(20,10))
-
-    for col in cols:
-        y = cols.index(col)
-        sns.histplot(data=df, x=col, ax = ax[y])
-        ax[y].set_title(col)
-        
-    return
 
 def plot_maker(df, plot = sns.histplot, figsize_x = 20, figsize_y = 10):
 	'''Returns a plot (default Seaborn histplot) in a single fig for each column of a given DataFrame
@@ -59,3 +42,4 @@ def plot_maker(df, plot = sns.histplot, figsize_x = 20, figsize_y = 10):
 
 if __name__ == "__main__":
 	correlation()
+	plot_maker()

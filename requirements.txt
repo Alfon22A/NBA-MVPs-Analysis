@@ -38,7 +38,7 @@ executing==0.10.0
     # via stack-data
 fastjsonschema==2.16.1
     # via nbformat
-fonttools==4.35.0
+fonttools==4.36.0
     # via matplotlib
 ipykernel==6.15.1
     # via
@@ -54,10 +54,9 @@ ipython==8.4.0
     #   jupyter-console
 ipython-genutils==0.2.0
     # via
-    #   ipywidgets
     #   notebook
     #   qtconsole
-ipywidgets==7.7.1
+ipywidgets==8.0.0
     # via jupyter
 jedi==0.18.1
     # via ipython
@@ -65,7 +64,9 @@ jinja2==3.1.2
     # via
     #   nbconvert
     #   notebook
-jsonschema==4.10.0
+joblib==1.1.0
+    # via scikit-learn
+jsonschema==4.10.3
     # via nbformat
 jupyter==1.0.0
     # via -r requirements.in
@@ -87,7 +88,7 @@ jupyter-core==4.11.1
     #   qtconsole
 jupyterlab-pygments==0.2.2
     # via nbconvert
-jupyterlab-widgets==1.1.1
+jupyterlab-widgets==3.0.0
     # via ipywidgets
 kiwisolver==1.4.4
     # via matplotlib
@@ -101,7 +102,7 @@ matplotlib==3.5.3
     # via
     #   -r requirements.in
     #   seaborn
-matplotlib-inline==0.1.5
+matplotlib-inline==0.1.6
     # via
     #   ipykernel
     #   ipython
@@ -125,13 +126,13 @@ nest-asyncio==1.5.5
     #   nbclient
     #   notebook
 notebook==6.4.12
-    # via
-    #   jupyter
-    #   widgetsnbextension
+    # via jupyter
 numpy==1.23.2
     # via
+    #   -r requirements-dev.in
     #   matplotlib
     #   pandas
+    #   scikit-learn
     #   scipy
     #   seaborn
 packaging==21.3
@@ -141,7 +142,9 @@ packaging==21.3
     #   nbconvert
     #   qtpy
 pandas==1.4.3
-    # via seaborn
+    # via
+    #   -r requirements-dev.in
+    #   seaborn
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
@@ -185,6 +188,8 @@ pywin32==304
     # via jupyter-core
 pywinpty==2.0.7
     # via terminado
+pyyaml==6.0
+    # via -r requirements-dev.in
 pyzmq==23.2.1
     # via
     #   ipykernel
@@ -195,8 +200,12 @@ qtconsole==5.3.1
     # via jupyter
 qtpy==2.2.0
     # via qtconsole
+scikit-learn==1.1.2
+    # via -r requirements-dev.in
 scipy==1.9.0
-    # via seaborn
+    # via
+    #   scikit-learn
+    #   seaborn
 seaborn==0.11.2
     # via -r requirements.in
 send2trash==1.8.0
@@ -212,6 +221,8 @@ stack-data==0.4.0
     # via ipython
 terminado==0.15.0
     # via notebook
+threadpoolctl==3.1.0
+    # via scikit-learn
 tinycss2==1.1.1
     # via nbconvert
 tornado==6.2
@@ -239,7 +250,7 @@ webencodings==0.5.1
     # via
     #   bleach
     #   tinycss2
-widgetsnbextension==3.6.1
+widgetsnbextension==4.0.0
     # via ipywidgets
 
 # The following packages are considered to be unsafe in a requirements file:

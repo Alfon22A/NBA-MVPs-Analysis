@@ -1,4 +1,4 @@
--r requirements-dev.txt
+-r requirements-dev.in
 jupyter
 seaborn
 matplotlib
