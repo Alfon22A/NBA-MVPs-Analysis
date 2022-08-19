@@ -54,7 +54,7 @@ We will also test some models to predict a future winner based on stats.
 - Best tested model: Logistic Regression for Top 5.
 
 ### Next steps
-- Including more data.
-- Factoring Stats and Win Shares coeficients.
-- Including Team Win%
-- Taking voter fatigue into account.
+- Include more data.
+- Factor Stats and Win Shares coeficients.
+- Measure Team Win percentage.
+- Take voter fatigue into account.
