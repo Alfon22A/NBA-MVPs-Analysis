@@ -1,20 +1,13 @@
-import pandas as pd
 import numpy as np
-import sys
-
-import seaborn as sns
+import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler, PowerTransformer
 from sklearn.linear_model import LinearRegression, LogisticRegression
-from sklearn.metrics import r2_score, confusion_matrix, ConfusionMatrixDisplay, cohen_kappa_score
+from sklearn.metrics import r2_score, cohen_kappa_score
 
 import pickle
 import yaml
-
-sys.path.append("./Lib")
-
-import functions
 
 with open("../params.yaml", "r") as file:
 	config = yaml.safe_load(file)
@@ -27,9 +20,7 @@ mvps = mvps.drop(columns = ["Player", "Tm", "First", "Pts Won", "Pts Max", "Year
 state = config["Random"]["State"]
 size = config["Test_Size"]["Standard"]
 
-mvps_rank = mvps.drop(columns = "Share")
-mvps_rank = functions.correlation(mvps_rank, 0, 0.5)
-mvps_rank = mvps_rank.drop(columns = "WS")
+mvps_rank = mvps[["Rank", "WS/48", "Stats/M"]]
 		  
 rank_X = mvps_rank.drop(columns = "Rank")
 rank_y = mvps_rank["Rank"]
@@ -63,9 +54,7 @@ rank_test_y_pred = rank_lr.predict(rank_X_test_pt_mm)
 print("First Model Train Score: {:.2f}".format(r2_score(rank_y_train, rank_train_y_pred),2))
 print("First Model Test Score: {:.2f}".format(r2_score(rank_y_test, rank_test_y_pred),2))
 
-mvps_share = mvps.drop(columns = "Rank")
-mvps_share = functions.correlation(mvps_share, 1, 0.4)
-mvps_share = mvps_share.drop(columns = "WS")
+mvps_share = mvps[["Share", "WS/48", "Stats/M"]]
 
 share_X = mvps_share.drop(columns = "Share")
 share_y = mvps_share["Share"]
