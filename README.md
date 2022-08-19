@@ -2,6 +2,8 @@
 
 # NBA MVPs Analysis (2000-2022)
 
+Analysis: Alfonso Muñoz Alonso
+
 [Tableau Presentation](https://public.tableau.com/views/NBA-MVPs-Analysis/Intro?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Introduction
